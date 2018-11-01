@@ -1,0 +1,38 @@
+.bg-soft-muted{
+    background-color: #F4F5F6;
+}
+
+.header-background{
+    background: url("https://www.thefashionenterprise.com/uploads/1530527238kes2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-cover{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.animation-move-up-red{
+    transition: all 0.25s;
+}
+
+.animation-move-up-red:hover{
+    box-shadow: 0rem 0.25rem 1.5rem #dc3545;
+    transform: translateY(-4px);
+}
+
+.text-shadow{
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.hover-red{
+    transition: all 0.25s;
+}
+
+.hover-red:hover{
+    color: #dc3545;
+    text-shadow: 0 0.5rem 1rem rgba(220, 53, 69, 0.15);
+}
