@@ -39,13 +39,13 @@
 
 @keyframes animation-m-u-p{
     0% {
-        transform: translateY(-90px);
+        transform: translateY(-50px);
     }
     50% {
-        transform: translateY(-75px);
+        transform: translateY(-35px);
     }
     100% {
-        transform: translateY(-90px);
+        transform: translateY(-50px);
     }
 }
 
@@ -125,6 +125,19 @@
     text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
+.text-none-underline{
+    text-decoration: none;
+}
+
+.hover-up img{
+    transition: all 0.20s;
+}
+
+.hover-up:hover > img{
+    transform: translateY(-15px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
 .hover-red{
     transition: all 0.25s;
 }
@@ -132,4 +145,13 @@
 .hover-red:hover{
     color: #dc3545;
     text-shadow: 0 0.5rem 1rem rgba(220, 53, 69, 0.15);
+}
+
+.overflow-y-hidden{
+    overflow-y: hidden;
+}
+
+.overflow-x-hidden{
+    overflow-y: auto;
+    overflow-x: hidden;
 }
