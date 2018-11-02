@@ -1,3 +1,8 @@
+::selection{
+    color: #fff;
+    background-color: #d0021b;
+}
+
 .bg-soft-muted{
     background-color: #F4F5F6;
 }
@@ -9,10 +14,84 @@
     background-repeat: no-repeat;
 }
 
-.background-cover{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.animation-move-up{
+    transition: all 0.25s;
+}
+
+.animation-move-up:hover{
+    transform: translateY(-4px);
+}
+.animation-d-1{
+    animation-delay: -1s;
+}
+
+.animation-d-2{
+    animation-delay: -2s;
+}
+
+.animation-d-3{
+    animation-delay: -3s;
+}
+
+.animation-d-4{
+    animation-delay: -4s;
+}
+
+@keyframes animation-m-u-p{
+    0% {
+        transform: translateY(-90px);
+    }
+    50% {
+        transform: translateY(-75px);
+    }
+    100% {
+        transform: translateY(-90px);
+    }
+}
+
+.animation-move-up-and-down{
+    animation-name: animation-m-u-p;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation-m-u-p-2{
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.animation-move-up-and-down-3{
+    animation-name: animation-m-u-p-3;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation-m-u-p-3{
+    0% {
+        transform: translateY(90px);
+    }
+    50% {
+        transform: translateY(105px);
+    }
+    100% {
+        transform: translateY(90px);
+    }
+}
+
+.animation-move-up-and-down-2{
+    animation-name: animation-m-u-p-2;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 .animation-move-up-red{
@@ -22,6 +101,24 @@
 .animation-move-up-red:hover{
     box-shadow: 0rem 0.25rem 1.5rem #dc3545;
     transform: translateY(-4px);
+}
+
+@keyframes animation-m-r-1{
+    from {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(70px);
+    }
+}
+
+.animation-move-right-1{
+    transform: translateX(70px);
+    animation-name: animation-m-r-1;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
 }
 
 .text-shadow{
