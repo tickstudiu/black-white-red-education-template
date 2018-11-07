@@ -155,3 +155,76 @@
     overflow-y: auto;
     overflow-x: hidden;
 }
+
+.card-title-hover{
+    transform: translateY(70px);
+    transition: all 0.35s;
+}
+
+.card-img-overlay:hover .card-title-hover{
+    transform: translateY(0px);
+}
+
+.card-text-hover{
+    opacity: 0;
+    transition: all 0.25s;
+}
+
+.card-img-overlay:hover .card-text-hover{
+    opacity: 1;
+}
+
+.h-cover{
+    height: 100vh;
+}
+
+.bg-hard-dark {
+    background: #1c1c1c
+}
+
+.carousel-title{
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+@media (max-width: 978px) {
+    .carousel-title{
+        font-size: 2.25rem;
+        font-weight: 200;
+        line-height: 1.10;
+    }
+}
+
+@media (min-width: 1000px) {
+    .w-lg-100 {
+        width: 100% !important;
+    }
+}
+
+/* The animation code */
+@keyframes anime-dropdown {
+    from {
+        opacity: 0;
+        transform: translate(0,-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+/* The element to apply the animation to */
+.animation-dropdown {
+    animation-name: anime-dropdown;
+    animation-duration: 0.5s;
+}
+.animation-card{
+    transform: translate(0,0px);
+    transition: all 0.25s;
+}
+
+.animation-card:hover {
+    transform: translate(0,-10px);
+    box-shadow: 1px 4px 12px rgba(0,0,0,0.4);
+}
