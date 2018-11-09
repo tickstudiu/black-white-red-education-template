@@ -3,6 +3,19 @@
     background-color: #d0021b;
 }
 
+body{
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    color: #1e2022;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #007bff;
+}
+
 .bg-soft-muted{
     background-color: #F4F5F6;
 }
@@ -183,14 +196,14 @@
 }
 
 .carousel-title{
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 300;
     line-height: 1.2;
 }
 
 @media (max-width: 978px) {
     .carousel-title{
-        font-size: 2.25rem;
+        font-size: 2rem;
         font-weight: 200;
         line-height: 1.10;
     }
